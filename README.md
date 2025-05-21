@@ -30,6 +30,16 @@ Os arquivos neste repositório representam práticas realizadas durante o aprend
 
 ---
 
+📌 Objetivo
+O objetivo deste repositório é documentar minha evolução na linguagem Dart, preparando o terreno para o desenvolvimento de aplicações completas com Flutter.
+📖 Base dos Estudos
+
+Curso: Flutterando
+
+Práticas acompanhadas e adaptadas com base no conteúdo do curso
+
+Exercícios autorais para fixação dos conceitos
+
 ## ✍️ Autor
 
 Bruno César de Oliveira
