@@ -40,6 +40,9 @@ Práticas acompanhadas e adaptadas com base no conteúdo do curso
 
 Exercícios autorais para fixação dos conceitos
 
+📝 Licença
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+
 ## ✍️ Autor
 
 Bruno César de Oliveira
