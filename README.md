@@ -1,25 +1,32 @@
-# dart-estudos
-# 📚 Estudos com Dart
+# 🧠 Dart Estudos
 
-Repositório criado para registrar meus estudos de lógica de programação com a linguagem Dart, base para desenvolvimento mobile com Flutter.
+Este repositório contém meus estudos em **Dart**, a linguagem utilizada no **Flutter**, com foco em lógica de programação, boas práticas e fundamentos essenciais para desenvolvimento mobile cross-platform.
 
-## 🚀 Conteúdo
+---
 
-- Variaveis
-- Tipos Primitivos
-- Inputs
-- Funções
-- Listas
-- Estruturas de controle (if, else, switch, loops)
-- Programação Orientada a Objetos (POO)
-- Desafios e exercícios práticos
+## 📚 Conteúdo
 
-  
-Conteúdo baseado no curso de lógica com Dart da Flutterando Marterclass
+Os arquivos neste repositório representam práticas realizadas durante o aprendizado e incluem:
 
-## 🧠 Objetivo
+- ✅ Entrada de dados via terminal
+- ✅ Funções
+- ✅ Condicionais (`if`, `else`)
+- ✅ Cálculo de IMC
+- ✅ Organização e refatoração de código
+- ✅ Comentários e boas práticas
 
-Praticar e fortalecer minha lógica de programação com foco no desenvolvimento mobile cross-platform com Flutter.
+---
+
+## 🚀 Como Executar
+
+1. **Pré-requisitos:**
+   - Dart SDK instalado → [Instalar Dart](https://dart.dev/get-dart)
+
+2. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/Bruno-oliveiraa/dart-estudos.git
+
 
 ---
 
