@@ -2,65 +2,64 @@ import 'dart:io';
 
 main() {
   final String name = pegarNome();
-  final double peso = pegarPeso();
-  final double altura = pegarAltura();
-  double imc = peso / (altura * altura);
-  print('\n');
+  final double peso = pegarDouble('Digite o seu peso (kg):');
+  final double altura = pegarDouble('Digite a sua altura (m):');
 
-  print('Nome: $name');
-  print('Seu IMC é: $imc');
+  if (peso <= 0 || altura <= 0) {
+    print('peso e altura devem ser maiores que zero para calcular o IMC');
+    return;
+  }
+  double imc = calcularIMC(peso, altura);
+
+  print('\nNome: $name');
+  print('Seu IMC é: ${imc.toStringAsFixed(2)}');
+
+  // Classifica o IMC de acordo com as faixas padrão da OMS
   if (imc < 16) {
     print('Magreza Grave');
-  }
-  if (imc > 15.9 && imc < 17) {
+  } else if (imc < 17) {
     print('Magreza Moderada');
-  }
-  if (imc > 16.9 && imc < 18.5) {
+  } else if (imc < 18.5) {
     print('Magreza Leve');
-  }
-  if (imc > 18.4 && imc < 25) {
+  } else if (imc < 25) {
     print('Peso Ideal');
-  }
-  if (imc > 24.9 && imc < 30) {
+  } else if (imc < 30) {
     print('Sobrepeso');
-  }
-  if (imc > 29.9 && imc < 35) {
+  } else if (imc < 35) {
     print('Obesidade Grau I');
-  }
-  if (imc > 34.9 && imc < 40) {
+  } else if (imc < 40) {
     print('Obesidade Grau II');
-  }
-  if (imc >= 40) {
+  } else if (imc >= 40) {
     print('Obesidade Grau III');
   }
 }
 
 String pegarNome() {
-  print('Digite o seu nome:');
+  // Solicita o nome do usuário
+  stdout.write('Digite o seu nome:');
   final String? name = stdin.readLineSync();
-  if (name == null) {
-    return 'Anônimo';
-  } else {
-    return name;
+  return name?.trim().isNotEmpty == true ? name! : 'Anônimo';
+}
+
+double pegarDouble(String mensagem) {
+  while (true) {
+    stdout.write(mensagem);
+    final String? input = stdin.readLineSync();
+    final double? valor = double.tryParse(input ?? '');
+    if (valor == null) {
+      print('Entrada inválida1 Por favor, digite um número válido.');
+      continue;
+    }
+    if (valor <= 0) {
+      print('O valor deve ser maior que zero.');
+      continue;
+    }
+    return valor;
   }
 }
 
-double pegarPeso() {
-  print('Digite o seus peso:');
-  final String? pesoString = stdin.readLineSync();
-  if (pesoString == null) {
-    return 0.0;
-  } else {
-    return double.parse(pesoString);
-  }
+// Calcula o IMC com base no peso e altura informados
+double calcularIMC(double peso, double altura) {
+  return peso / (altura * altura);
 }
 
-double pegarAltura() {
-  print('Digite a sua altura:');
-  final String? alturaString = stdin.readLineSync();
-  if (alturaString == null) {
-    return 0.0;
-  } else {
-    return double.parse(alturaString);
-  }
-}
