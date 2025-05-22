@@ -15,20 +15,7 @@ Os arquivos neste repositório representam práticas realizadas durante o aprend
 - ✅ Organização e refatoração de código
 - ✅ Comentários e boas práticas
 
----
 
-## 🚀 Como Executar
-
-1. **Pré-requisitos:**
-   - Dart SDK instalado → [Instalar Dart](https://dart.dev/get-dart)
-
-2. **Clone o repositório:**
-
-   ```bash
-   git clone https://github.com/Bruno-oliveiraa/dart-estudos.git
-
-
----
 
 📌 Objetivo
 O objetivo deste repositório é documentar minha evolução na linguagem Dart, preparando o terreno para o desenvolvimento de aplicações completas com Flutter.
@@ -38,11 +25,3 @@ Curso: Flutterando
 
 Práticas acompanhadas e adaptadas com base no conteúdo do curso
 
-Exercícios autorais para fixação dos conceitos
-
-📝 Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
-
-## ✍️ Autor
-
-Bruno César de Oliveira
